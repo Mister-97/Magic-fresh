@@ -1,12 +1,17 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import { listenForOutsideClicks } from "../utils/listenForOutsideClicks";
 import Request from "./Button/Request";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
+  const menuRef = useRef(null);
+  const [listening, setListening] = useState(false);
+
+  useEffect(listenForOutsideClicks(listening, setListening, menuRef, setOpen));
   return (
     <Nav>
       <Img onClick={() => router.push("/")} src="/logo.png" />
@@ -19,14 +24,22 @@ const Navbar = () => {
       </Flex>
       <Btns>
         <Request title="Request An Estimate" />
-        <Menu onClick={() => setOpen(!open)} src="/homepage/menu.png" />
+        <Menu
+          ref={menuRef}
+          onClick={() => setOpen(!open)}
+          src="/homepage/menu.png"
+        />
       </Btns>
       <MobileMenu open={open}>
-        <div>Book Now</div>
-        <div>Our Services</div>
+        <div>
+          <Link href="/book-now">Book Now</Link>
+        </div>
+        <div>
+          <Link href="/services">Our Services</Link>
+        </div>
         <div>About Us</div>
         <div>Discounts</div>
-        <div>Our Cleaning Process</div>
+        <div href="/cleaning-process">Our Cleaning Process</div>
       </MobileMenu>
     </Nav>
   );
@@ -92,8 +105,10 @@ const MobileMenu = styled.div`
   background: white;
   opacity: 0.6;
   width: 100vw;
+  margin-left: -3vw;
   display: ${(props) => (props.open ? "block" : "none")};
   div {
     margin-bottom: 5px;
+    margin-left: 10px;
   }
 `;

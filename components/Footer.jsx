@@ -9,29 +9,29 @@ const Footer = () => {
       <Foot>
         <Img src="/logo.png" />
         <Links>
-          <ul>
+          <div>
             <Link href="/faq">
-              <li>Faqs</li>
+              <div>Faqs</div>
             </Link>
             <Link href="/contact">
-              <li>Contact Us</li>
+              <div>Contact Us</div>
             </Link>
-            <li>Our Services</li>
-          </ul>
-          <ul>
+            <div>Our Services</div>
+          </div>
+          <div>
             <Link href="/terms">
-              <li>Terms of Use</li>
+              <div>Terms of Use</div>
             </Link>
             <Link href="/privacy">
-              <li>Privacy Policy</li>
+              <div>Privacy Policy</div>
             </Link>
-            <li>Accessibility</li>
-          </ul>
-          <ul>
-            <li>Request Estimate</li>
-            <li>Our Process</li>
-            <li>About Us</li>
-          </ul>
+            <div>Accessibility</div>
+          </div>
+          <div>
+            <div>Request Estimate</div>
+            <div>Our Process</div>
+            <div>About Us</div>
+          </div>
         </Links>
       </Foot>
       <Copyright>Copyright © Magic Fresh. All Rights Reserved.</Copyright>
@@ -58,7 +58,7 @@ const Links = styled.div`
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  line-height: 38px;
+  line-height: 45px;
   flex: 0.6;
   @media (max-width: 900px) {
     flex-direction: column;
@@ -67,9 +67,12 @@ const Links = styled.div`
   }
 
   color: #000000;
-  ul {
+  div {
     list-style: none;
     cursor: pointer;
+    div {
+      text-align: center;
+    }
     @media (max-width: 900px) {
       text-align: center;
     }
@@ -85,7 +88,6 @@ const Img = styled.img`
 
   @media (max-width: 900px) {
     height: 50px;
-    margin-left: 30px;
   }
 `;
 

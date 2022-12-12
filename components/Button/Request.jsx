@@ -19,8 +19,9 @@ const Btn = styled.button`
   color: #ffffff;
 
   @media (max-width: 768px) {
-    height: 5vh;
+    height: 4vh;
     padding: 0px 5px;
     border: none;
+    font-size: 12px;
   }
 `;

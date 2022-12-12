@@ -14,6 +14,11 @@ export default Feature;
 const Container = styled.div`
   img {
     height: 40vh;
+
+    @media(max-width: 900px){
+      width: 80vw;
+      height: auto
+    }
   }
   h2,p {
     font-family: "Oswald";

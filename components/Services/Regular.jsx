@@ -138,6 +138,9 @@ export const Img = styled.div`
 
 export const NoServices = styled.div`
   margin-left: 15vw;
+  @media (max-width: 900px) {
+    margin-left: 5vw;
+  }
   ul {
     list-style: none;
   }

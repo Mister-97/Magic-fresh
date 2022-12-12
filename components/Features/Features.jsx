@@ -122,13 +122,15 @@ const TryOut = styled.div`
       max-width: 350px;
 
       @media (max-width: 900px) {
-        width: 45vw;
-        left: 37%;
+        width: 50vw;
+        left: 40%;
+        top: 13%;
+        padding: 6px;
         h3 {
-          font-size: 12px;
+          font-size: 11px;
         }
         p {
-          font-size: 10px;
+          font-size: 9px;
         }
       }
     }

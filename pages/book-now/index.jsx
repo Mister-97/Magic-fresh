@@ -5,6 +5,50 @@ import Select from "react-select";
 import { Btn } from "../contact";
 
 const BookNow = () => {
+  const optionsService = [
+    {
+      value: "residential",
+      label: "Residential Cleaning",
+    },
+    {
+      value: "airbnb",
+      label: "Airbnb",
+    },
+    {
+      value: "move",
+      label: "Move In/Out Service",
+    },
+    {
+      value: "carpet",
+      label: "Carpet Cleaning",
+    },
+  ];
+  const optionsType = [
+    {
+      value: "regular",
+      label: "Regular Cleaning",
+    },
+    {
+      value: "deepClean",
+      label: "Deep Cleaning",
+    },
+    {
+      value: "Move",
+      label: "Move In/Out Service",
+    },
+  ];
+
+  const optionsBedrooms = [
+    { value: "Studio", label: "Studio" },
+    { value: "1br/1ba", label: "1br/1ba" },
+    { value: "2br/1ba", label: "2br/1ba" },
+    { value: "2br/2ba", label: "2br/2ba" },
+    { value: "3br/1ba", label: "3br/1ba" },
+    { value: "3br/2ba", label: "3br/2ba" },
+    { value: "3br/2ba", label: "3br/3ba" },
+    { value: "4br+", label: "4br+" },
+  ];
+
   return (
     <Container>
       <br />
@@ -20,31 +64,12 @@ const BookNow = () => {
           <input type="text" placeholder="Zip Code" />
         </Flex>
         <Flex>
-          {/* <Select options={options} /> */}
           <Flex>
-            <select name="" id="">
-              <option value="Residential Cleaning">Residential Cleaning</option>
-              <option value="Airbnb">Airbnb</option>
-              <option value="Move in/out service">Move in/out service</option>
-              <option value="Carpet Cleaning">Carpet Cleaning</option>
-            </select>
+            <Select options={optionsService} />
             <Spacer></Spacer>
-            <select name="" id="">
-              <option value="Residential Cleaning">Regular Cleaning</option>
-              <option value="Airbnb">Deep Cleaning</option>
-              <option value="Move in/out service">Move in/out service</option>
-            </select>
+            <Select options={optionsType} />
             <Spacer></Spacer>
-            <select name="" id="">
-              <option value="Studio">Studio</option>
-              <option value="1br/ba">1br/ba</option>
-              <option value="2br/ba">2br/1ba</option>
-              <option value="2br/2ba">2br/2ba</option>
-              <option value="3br/1ba">3br/1ba</option>
-              <option value="3br/2ba">3br/2ba</option>
-              <option value="3br/3ba">3br/3ba</option>
-              <option value="4br+">4br+</option>
-            </select>
+            <Select options={optionsBedrooms} />
             <Spacer></Spacer>
           </Flex>
         </Flex>
@@ -75,6 +100,7 @@ const Container = styled.div`
 const Flex = styled.div`
   display: flex;
   /* justify-content: space-around; */
+  flex-wrap: wrap;
   input {
     padding: 10px;
     outline: none;
@@ -86,6 +112,7 @@ const Flex = styled.div`
 
 const Spacer = styled.div`
   width: 50px;
+  height: 20px;
 `;
 
 const Img = styled.img`
