@@ -17,7 +17,6 @@ const Container = styled.div`
   justify-content: space-around;
   padding: 40px;
   align-items: center;
-
   @media (max-width: 900px) {
     flex-direction: column;
   }
