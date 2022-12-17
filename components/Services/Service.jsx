@@ -11,11 +11,11 @@ const Container = styled.div`
   img {
     width: 40vw;
     border: 0.5px solid #5f5f5f;
-    padding: 10px;
+    padding: 5px;
   }
   display: flex;
   justify-content: space-around;
-  padding: 80px;
+  padding: 40px;
   align-items: center;
   @media (max-width: 900px) {
     flex-direction: column;
