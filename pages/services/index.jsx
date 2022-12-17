@@ -37,6 +37,6 @@ const H2 = styled.h2`
 
 const Wrapper = styled.div`
   width: 50vw;
-  margin-left: 2;
-  margin-right: 1;
+  margin-left: auto;
+  margin-right: auto;
 `;
