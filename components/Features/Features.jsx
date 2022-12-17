@@ -90,7 +90,7 @@ const TryOut = styled.div`
   justify-content: space-between;
   img {
     width: 50vw;
-    @media (max-width: 100px) {
+    @media (max-width: 800px) {
       width: 70vw;
     }
   }
@@ -124,7 +124,7 @@ const TryOut = styled.div`
       @media (max-width: 900px) {
         width: 50vw;
         left: 40%;
-        top: 13%;
+        top: 30%;
         padding: 6px;
         h3 {
           font-size: 11px;
