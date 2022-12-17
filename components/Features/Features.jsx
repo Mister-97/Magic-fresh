@@ -124,8 +124,8 @@ const TryOut = styled.div`
       @media (max-width: 900px) {
         width: 50vw;
         left: 40%;
-        top: 30%;
-        padding: 6px;
+        top: 15%;
+        padding: 12px;
         h3 {
           font-size: 11px;
         }
