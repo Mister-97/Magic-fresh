@@ -16,11 +16,11 @@ const Navbar = () => {
     <Nav>
       <Img onClick={() => router.push("/")} src="/logo.png" />
       <Flex>
-        <Link href="/book-now">Book Now</Link>
-        <Link href="/services">Our Services</Link>
+        <Link href="/book-now">Home</Link>
+        <Link href="/services">Book Now</Link>
+        <div>Our Services</div>
         <div>About Us</div>
-        <div>Discounts</div>
-        <div href="/cleaning-process">Our Cleaning Process</div>
+        <div href="/cleaning-process">Discounts</div>
       </Flex>
       <Btns>
         <Request title="Request An Estimate" />
@@ -32,14 +32,14 @@ const Navbar = () => {
       </Btns>
       <MobileMenu open={open}>
         <div>
-          <Link href="/book-now">Book Now</Link>
+          <Link href="/book-now">Home</Link>
         </div>
         <div>
-          <Link href="/services">Our Services</Link>
+          <Link href="/services">Book Now</Link>
         </div>
+        <div>Our Services</div>
         <div>About Us</div>
-        <div>Discounts</div>
-        <div href="/cleaning-process">Our Cleaning Process</div>
+        <div href="/cleaning-process">Discounts</div>
       </MobileMenu>
     </Nav>
   );
