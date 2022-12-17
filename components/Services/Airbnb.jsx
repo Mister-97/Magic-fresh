@@ -55,7 +55,7 @@ const Airbnb = () => {
           <li>Vacuum and/or mop floors</li>
           <br />
           <strong>​​​​​​​ Regular cleaning Do NOT include:</strong>
-          wipe down baseboard, doors, cabinets inside, fridge inside, oven
+          Wipe down baseboard, doors, cabinets inside, fridge inside, oven
           inside, windows.​​​​​​​
         </ul>
 
