@@ -89,9 +89,9 @@ const TryOut = styled.div`
   position: relative;
   justify-content: space-between;
   img {
-    width: 25vw;
-    @media (max-width: 900px) {
-      width: 35vw;
+    width: 50vw;
+    @media (max-width: 100px) {
+      width: 70vw;
     }
   }
   div {
