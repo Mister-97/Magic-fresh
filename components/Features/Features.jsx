@@ -126,8 +126,8 @@ const TryOut = styled.div`
         color: #7c7c7c;
       }
       position: absolute;
-      top: 40%;
-      left: 70%;
+      top: 15%;
+      left: 55%;
       background: white;
       padding: 30px 40px;
       max-width: 350px;
