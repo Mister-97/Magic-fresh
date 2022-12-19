@@ -67,7 +67,7 @@ const Nav = styled.nav`
 `;
 
 const Img = styled.img`
-  width: 10vw;
+  width: 12vw;
   @media (max-width: 900px) {
     width: 80px;
   }
@@ -75,9 +75,10 @@ const Img = styled.img`
 
 const Flex = styled.div`
   display: flex;
-  flex: 1;
+  flex: 0.7;
   justify-content: space-around;
   color: black;
+  font-size: 14px;
 
   @media (max-width: 900px) {
     display: none;

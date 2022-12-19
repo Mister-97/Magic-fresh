@@ -14,6 +14,7 @@ export default Feature;
 const Container = styled.div`
   img {
     height: 40vh;
+    padding: 0 2vw;
 
     @media(max-width: 900px){
       width: 80vw;
@@ -40,12 +41,11 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: ${(props) => (props.reverse ? "row-reverse" : "row")};
-
   @media (max-width: 900px) {
     flex-direction: column;
   }
 
-  padding: 5vw;
+  padding: 8vw;
   ul {
     list-style: none;
     color: #656565;

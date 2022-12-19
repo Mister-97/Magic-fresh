@@ -16,6 +16,10 @@ const Features = () => {
               Cleaners possesses a magical touch, each cleaning will have your
               home feeling brand new again.
             </p>
+            <br />
+            <a style={{}} href="">
+              Try Us Out
+            </a>
           </div>
         </div>
         <img src="/homepage/magic.png" />
@@ -88,6 +92,11 @@ const TryOut = styled.div`
   display: flex;
   position: relative;
   justify-content: space-between;
+  padding: 6vw;
+  a {
+    color: #229ff9;
+    text-align: center;
+  }
   img {
     width: 50vw;
     @media (max-width: 800px) {
@@ -103,6 +112,8 @@ const TryOut = styled.div`
       h3 {
         text-align: center;
       }
+      display: flex;
+      flex-direction: column;
       p {
         text-align: center;
         font-family: "Arial";
@@ -118,9 +129,8 @@ const TryOut = styled.div`
       top: 40%;
       left: 70%;
       background: white;
-      padding: 20px;
+      padding: 30px 40px;
       max-width: 350px;
-
       @media (max-width: 900px) {
         width: 50vw;
         left: 40%;
