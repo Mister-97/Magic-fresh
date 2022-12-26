@@ -16,7 +16,6 @@ const Features = () => {
               Cleaners possesses a magical touch, each cleaning will have your
               home feeling brand new again.
             </p>
-            <br />
             <a style={{}} href="">
               Try Us Out
             </a>
@@ -141,6 +140,19 @@ const TryOut = styled.div`
         }
         p {
           font-size: 9px;
+        }
+      }
+      @media (max-width: 500px) {
+        width: 50vw;
+        left: 15%;
+        top: 10%;
+        padding: 12px;
+        h3 {
+          font-size: 10px;
+        }
+        p,
+        a {
+          font-size: 8px;
         }
       }
     }

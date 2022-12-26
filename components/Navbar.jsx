@@ -16,11 +16,11 @@ const Navbar = () => {
     <Nav>
       <Img onClick={() => router.push("/")} src="/logo.png" />
       <Flex>
-        <Link href="/book-now">Home</Link>
-        <Link href="/services">Book Now</Link>
-        <div>Our Services</div>
-        <div>About Us</div>
-        <div href="/cleaning-process">Discounts</div>
+        <Link href="/">Home</Link>
+        <Link href="/book-now">Book Now</Link>
+        <Link href="/services">Our Services</Link>
+        <Link href="/">About Us</Link>
+        <div href="/">Discounts</div>
       </Flex>
       <Btns>
         <Request title="Request An Estimate" />
@@ -78,7 +78,7 @@ const Flex = styled.div`
   flex: 0.7;
   justify-content: space-around;
   color: black;
-  font-size: 14px;
+  font-size: 18px;
 
   @media (max-width: 900px) {
     display: none;

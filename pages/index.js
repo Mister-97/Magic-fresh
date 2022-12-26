@@ -19,7 +19,9 @@ export default function Home() {
       {/* <Navbar /> */}
       <Banner>
         <img src="/homepage/banner.jpeg" />
-        <Request title="Request Cleaning Service" />
+        <BtnContainer>
+          <Request title="Request Cleaning Service" />
+        </BtnContainer>
       </Banner>
       <Features />
       <Flag />
@@ -33,7 +35,7 @@ const Banner = styled.div`
     width: 100vw;
   }
   position: relative;
-  button {
+  /* button {
     position: absolute;
     left: 45%;
     bottom: 10%;
@@ -42,5 +44,13 @@ const Banner = styled.div`
     @media (max-width: 900px) {
       left: 37%;
     }
-  }
+  } */
+`;
+
+const BtnContainer = styled.div`
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
 `;
