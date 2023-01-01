@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Feature from "./Feature";
+import Scroll from "react-scroll";
+import { useRouter } from "next/router";
 
+const scroller = Scroll.animateScroll;
 const Features = () => {
+  const router = useRouter();
+
+  useEffect(() => {
+    if (Object.keys(router.query).includes("about")) {
+      scroller.scrollTo(1000);
+    } else if (Object.keys(router.query).includes("process")) {
+      scroller.scrollTo(1500);
+    }
+  }, [router]);
   return (
-    <div>
+    <section id="features">
       <TryOut>
         <div>
           <div>
@@ -24,7 +36,7 @@ const Features = () => {
         <img src="/homepage/magic.png" />
       </TryOut>
       <Feature img="/homepage/proven-process.png">
-        <div>
+        <div id="about">
           <h2>Our Proven Process</h2>
           <ul>
             <li>
@@ -81,7 +93,7 @@ const Features = () => {
           </p>
         </div>
       </Feature>
-    </div>
+    </section>
   );
 };
 

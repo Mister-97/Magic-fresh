@@ -16,14 +16,17 @@ const Navbar = () => {
     <Nav>
       <Img onClick={() => router.push("/")} src="/logo.png" />
       <Flex>
-        <Link href="/">Home</Link>
+        <a href="/">Home</a>
         <Link href="/book-now">Book Now</Link>
         <Link href="/services">Our Services</Link>
-        <Link href="/">About Us</Link>
-        <div href="/">Discounts</div>
+        <Link href="/?about">About Us</Link>
+        <Link href="/discounts">Discounts</Link>
       </Flex>
       <Btns>
-        <Request title="Request An Estimate" />
+        <Request
+          onClick={() => router.push("book-now")}
+          title="Request An Estimate"
+        />
         <Menu
           ref={menuRef}
           onClick={() => setOpen(!open)}

@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const Request = ({ title }) => {
-  return <Btn>{title}</Btn>;
+const Request = ({ title, onClick }) => {
+  return <Btn onClick={onClick}>{title}</Btn>;
 };
 
 export default Request;
@@ -16,7 +16,7 @@ const Btn = styled.button`
   font-style: italic;
   min-width: 180px;
   font-weight: 700;
-
+  cursor: pointer;
   color: #ffffff;
 
   @media (max-width: 768px) {
