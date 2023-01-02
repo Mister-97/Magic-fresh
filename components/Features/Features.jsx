@@ -28,7 +28,7 @@ const Features = () => {
               Cleaners possesses a magical touch, each cleaning will have your
               home feeling brand new again.
             </p>
-            <a style={{}} href="">
+            <a style={{}} href="/book-now">
               Try Us Out
             </a>
           </div>

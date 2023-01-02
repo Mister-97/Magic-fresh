@@ -16,7 +16,7 @@ const Navbar = () => {
     <Nav>
       <Img onClick={() => router.push("/")} src="/logo.png" />
       <Flex>
-        <a href="/">Home</a>
+        <Link href="/">Home</Link>
         <Link href="/book-now">Book Now</Link>
         <Link href="/services">Our Services</Link>
         <Link href="/?about">About Us</Link>
@@ -34,15 +34,11 @@ const Navbar = () => {
         />
       </Btns>
       <MobileMenu open={open}>
-        <div>
-          <Link href="/book-now">Home</Link>
-        </div>
-        <div>
-          <Link href="/services">Book Now</Link>
-        </div>
-        <div>Our Services</div>
-        <div>About Us</div>
-        <div href="/cleaning-process">Discounts</div>
+        <Link href="/">Home</Link>
+        <Link href="/book-now">Book Now</Link>
+        <Link href="/services">Our Services</Link>
+        <Link href="/?about">About Us</Link>
+        <Link href="/discounts">Discounts</Link>
       </MobileMenu>
     </Nav>
   );
