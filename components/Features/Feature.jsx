@@ -11,10 +11,12 @@ const Feature = ({ img, children, reverse }) => {
 };
 
 export default Feature;
+
 const Container = styled.div`
   img {
     height: 40vh;
-    padding: 0 2vw;
+    padding: 0  0px 30px 30px;
+    /* background: rgba(34, 159, 249, 0.27);; */
 
     @media(max-width: 900px){
       width: 80vw;

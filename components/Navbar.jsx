@@ -34,11 +34,21 @@ const Navbar = () => {
         />
       </Btns>
       <MobileMenu open={open}>
-        <Link href="/">Home</Link>
-        <Link href="/book-now">Book Now</Link>
-        <Link href="/services">Our Services</Link>
-        <Link href="/?about">About Us</Link>
-        <Link href="/discounts">Discounts</Link>
+        <div>
+          <Link href="/">Home</Link>
+        </div>
+        <div>
+          <Link href="/book-now">Book Now</Link>
+        </div>
+        <div>
+          <Link href="/services">Our Services</Link>
+        </div>
+        <div>
+          <Link href="/?about">About Us</Link>
+        </div>
+        <div>
+          <Link href="/discounts">Discounts</Link>
+        </div>
       </MobileMenu>
     </Nav>
   );
