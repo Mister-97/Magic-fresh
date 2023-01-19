@@ -8,11 +8,12 @@ import Flag from "../components/Flag";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
+import Clients from "../components/Clients";
 
 export default function Home() {
   const router = useRouter();
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{width: "100%"}}>
       <Head>
         <title>Magic Fresh</title>
         <meta name="description" content="Cleaning Service" />
@@ -29,6 +30,7 @@ export default function Home() {
         </BtnContainer>
       </Banner>
       <Features />
+      <Clients />
       <Flag />
       {/* <Footer /> */}
     </div>
@@ -37,7 +39,7 @@ export default function Home() {
 
 const Banner = styled.div`
   img {
-    width: 100vw;
+    width: 100%;
   }
   position: relative;
   /* button {
@@ -53,7 +55,7 @@ const Banner = styled.div`
 `;
 
 const BtnContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   position: absolute;

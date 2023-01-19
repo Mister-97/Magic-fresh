@@ -20,7 +20,10 @@ const Features = () => {
       <TryOut>
         <div>
           <div>
-            <h3>Must Be Magic</h3>
+            <h3>
+              It Must Be Magic
+              <img className="kissing" src="/homepage/kissing.png" />
+            </h3>
             <p>
               Magic Fresh is a cleaning service that serves the Chicagoland
               area. Our main goal is customer satisfaction, which means that our
@@ -41,7 +44,7 @@ const Features = () => {
           <ul>
             <li>
               <strong>Clean and Sanitize –</strong> In addition to our regular
-              cleaning procedures, our crew will additionally sanitize light
+              cleaning procedures our crew will additionally sanitize light
               switches, doorknobs, telephones, bathroom surfaces, and other
               locations that are frequently handled.
             </li>
