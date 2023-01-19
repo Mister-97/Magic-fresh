@@ -94,3 +94,22 @@
     content: "<";
     color: black;
 }
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .clients {
+        padding: 20px;
+    }
+    .client-container {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .clients {
+        padding: 60px;
+    }
+    .client-container {
+        width: 100%;
+    }
+}
