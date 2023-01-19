@@ -14,3 +14,7 @@ body {
   font-weight: 400;
   line-height: 100px;
 }
+
+@import url("./Home.module.css");
+@import url("./client.css");
+@import 'bootstrap/dist/css/bootstrap.min.css';

@@ -1,0 +1,14 @@
+.kissing {
+    width: 17px !important;
+    height: 22px !important;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -8px;
+}
+
+.clients {
+    background: url(/homepage/clients.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px;
+}
