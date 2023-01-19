@@ -2,6 +2,7 @@
     margin: 0 auto;
     background-color: white;
     padding: 50px 0;
+    width: 500px;
 }
 
 .client-container__topic {
@@ -92,4 +93,23 @@
 .carousel-control-prev-icon::after {
     content: "<";
     color: black;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .clients {
+        padding: 20px;
+    }
+    .client-container {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .clients {
+        padding: 60px;
+    }
+    .client-container {
+        width: 100%;
+    }
 }
