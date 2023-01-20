@@ -47,7 +47,7 @@ const Container = styled.div`
     flex-direction: column;
   }
 
-  padding: 8vw;
+  padding: 15vw;
   ul {
     list-style: none;
     color: #656565;
