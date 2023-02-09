@@ -69,6 +69,9 @@ const Nav = styled.nav`
     text-decoration: none;
     color: #111;
   }
+  a:hover {
+    text-decoration: underline 4px solid #229ff9;
+  }
 
   @media (max-width: 900px) {
     justify-content: space-between;
