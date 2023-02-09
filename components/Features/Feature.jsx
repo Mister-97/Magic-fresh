@@ -16,7 +16,7 @@ const Container = styled.div`
   img {
     height: 40vh;
     padding: 0  0px 30px 30px;
-    /* background: rgba(34, 159, 249, 0.27);; */
+    //  background: rgba(34, 159, 249, 0.27);
 
     @media(max-width: 900px){
       width: 80vw;
@@ -24,12 +24,14 @@ const Container = styled.div`
     }
   }
   h2,p {
-    font-family: "Oswald";
+    font-family: "poppins";
     font-style: normal;
     font-weight: 400;
+ 
 
     color: #000000;
-    padding-left: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
 
   p {
@@ -37,7 +39,8 @@ const Container = styled.div`
     font-style: normal;
     font-weight: 400;
 
-    padding-left: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
     color: #656565;
   }
   display: flex;
@@ -46,12 +49,12 @@ const Container = styled.div`
   @media (max-width: 900px) {
     flex-direction: column;
   }
-
   padding: 15vw;
   ul {
     list-style: none;
     color: #656565;
-    padding-left: 3vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   li {
     padding: 20px 0;
   }

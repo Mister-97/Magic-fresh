@@ -38,9 +38,11 @@ const Features = () => {
         </div>
         <img src="/homepage/magic.png" />
       </TryOut>
-      <Feature img="/homepage/proven-process.png">
+      <Feature img="/homepage/proven-process.jpeg">
         <div id="about">
-          <h2>Our Proven Process</h2>
+          <h2>
+            Our Proven <br /> Process
+          </h2>
           <ul>
             <li>
               <strong>Clean and Sanitize –</strong> In addition to our regular
@@ -125,6 +127,7 @@ const TryOut = styled.div`
       width: 40vw;
       h3 {
         text-align: center;
+        margin-bottom: 50px;
       }
       display: flex;
       flex-direction: column;
@@ -140,11 +143,11 @@ const TryOut = styled.div`
         color: #7c7c7c;
       }
       position: absolute;
-      top: 15%;
+      top: 10%;
       left: 55%;
       background: white;
-      padding: 30px 40px;
-      max-width: 350px;
+      padding: 80px 40px;
+      max-width: 500px;
       @media (max-width: 900px) {
         width: 50vw;
         left: 40%;
