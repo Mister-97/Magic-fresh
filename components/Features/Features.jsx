@@ -67,10 +67,16 @@ const Features = () => {
               Fresh is that contracts are never an option.
             </li>
           </ul>
+          <a
+            style={{ textAlign: "left", paddingLeft: "70px" }}
+            href="/services"
+          >
+            Our Cleaning Process
+          </a>
         </div>
       </Feature>
       <Feature reverse img="/homepage/brand-new.png">
-        <div>
+        <div style={{ textAlign: "right" }}>
           <h2>With a little magic, make your home feel brand new again</h2>
 
           <p>
@@ -80,6 +86,16 @@ const Features = () => {
             stress from your day so you can live your life on your terms. With a
             little magic, you can make your home feel brand new again.
           </p>
+          <a
+            style={{
+              textAlign: "right",
+              justifyContent: "right",
+              paddingRight: "5rem",
+            }}
+            href="/services"
+          >
+            Our Services
+          </a>
         </div>
       </Feature>
       <Feature img="/homepage/guarantee.png">
@@ -149,7 +165,7 @@ const TryOut = styled.div`
       padding: 80px 40px;
       max-width: 500px;
       @media (max-width: 900px) {
-        width: 50vw;
+        width: 100vw;
         left: 40%;
         top: 15%;
         padding: 12px;

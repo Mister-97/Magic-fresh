@@ -23,6 +23,7 @@ const Container = styled.div`
       height: auto
     }
   }
+  
   h2,p {
     font-family: "poppins";
     font-style: normal;
@@ -49,7 +50,9 @@ const Container = styled.div`
   @media (max-width: 900px) {
     flex-direction: column;
   }
-  padding: 15vw;
+  padding: 5vw;
+  padding-right: 15vw;
+  padding-left: 15vw;
   ul {
     list-style: none;
     color: #656565;
