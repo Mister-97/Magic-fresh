@@ -17,4 +17,4 @@ body {
 
 @import url("./Home.module.css");
 @import url("./client.css");
-@import 'bootstrap/dist/css/bootstrap.min.css';
+@import "bootstrap/dist/css/bootstrap.min.css";

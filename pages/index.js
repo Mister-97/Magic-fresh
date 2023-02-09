@@ -13,7 +13,7 @@ import Clients from "../components/Clients";
 export default function Home() {
   const router = useRouter();
   return (
-    <div className={styles.container} style={{width: "100%"}}>
+    <div className={styles.container} style={{ width: "100%" }}>
       <Head>
         <title>Magic Fresh</title>
         <meta name="description" content="Cleaning Service" />

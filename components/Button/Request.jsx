@@ -9,8 +9,8 @@ export default Request;
 
 const Btn = styled.button`
   background: #229ff9;
-  height: 40px;
-  padding: 0px 2px;
+  height: 50px;
+  padding: 0px 20px;
   border: none;
   /* font-family: "Oswald"; */
   font-style: italic;
