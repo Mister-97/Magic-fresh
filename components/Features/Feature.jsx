@@ -20,7 +20,8 @@ const Container = styled.div`
 
     @media(max-width: 900px){
       width: 80vw;
-      height: auto
+      height: auto;
+      padding-top:30px;
     }
   }
   

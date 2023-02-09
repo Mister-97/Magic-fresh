@@ -15,6 +15,7 @@ const Features = () => {
       scroller.scrollTo(1500);
     }
   }, [router]);
+
   return (
     <section id="features">
       <TryOut>
@@ -40,9 +41,7 @@ const Features = () => {
       </TryOut>
       <Feature img="/homepage/proven-process.jpeg">
         <div id="about">
-          <h2>
-            Our Proven <br /> Process
-          </h2>
+          <h2>Our Proven Process</h2>
           <ul>
             <li>
               <strong>Clean and Sanitize –</strong> In addition to our regular
@@ -68,7 +67,10 @@ const Features = () => {
             </li>
           </ul>
           <a
-            style={{ textAlign: "left", paddingLeft: "70px" }}
+            style={{
+              textAlign: "left",
+              paddingLeft: "70px",
+            }}
             href="/services"
           >
             Our Cleaning Process
@@ -144,6 +146,9 @@ const TryOut = styled.div`
       h3 {
         text-align: center;
         margin-bottom: 50px;
+        @media (max-width: 900px) {
+          margin-bottom: 20px;
+        }
       }
       display: flex;
       flex-direction: column;
@@ -167,7 +172,7 @@ const TryOut = styled.div`
       @media (max-width: 900px) {
         width: 100vw;
         left: 40%;
-        top: 15%;
+        top: 10%;
         padding: 12px;
         h3 {
           font-size: 11px;
@@ -179,8 +184,8 @@ const TryOut = styled.div`
       @media (max-width: 500px) {
         width: 50vw;
         left: 15%;
-        top: 10%;
-        padding: 12px;
+        top: 5%;
+        padding: 8px;
         h3 {
           font-size: 10px;
         }

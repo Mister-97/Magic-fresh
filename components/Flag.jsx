@@ -20,4 +20,8 @@ const Container = styled.div`
   color: #ffffff;
   text-align: center;
   padding: 20px 0;
+  @media (max-width: 800px) {
+    font-size: 17px;
+    line-height: 50px;
+  }
 `;
