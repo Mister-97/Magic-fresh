@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
 import Clients from "../components/Clients";
+import ImageCarousel from "../components/ImageCarousel";
 
 export default function Home() {
   const router = useRouter();
@@ -21,7 +22,9 @@ export default function Home() {
       </Head>
       {/* <Navbar /> */}
       <Banner>
-        <img src="/homepage/banner.jpeg" />
+        {/* <img src="/homepage/banner-1.png" /> */}
+        <ImageCarousel />
+
         <BtnContainer>
           <Request
             onClick={() => router.push("/book-now")}
