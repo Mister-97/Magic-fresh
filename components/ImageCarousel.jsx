@@ -13,11 +13,11 @@ function ImageCarousel() {
       activeIndex={index}
       onSelect={handleSelect}
       interval={4000}
-      style={{ height: "100vh" }}
+      style={{ height: "100%" }}
     >
       <Carousel.Item>
         <img
-          className="d-block w-100 h-100 "
+          className="d-block w-100"
           src="homepage/banner-1.png"
           alt="Image 1"
         />
