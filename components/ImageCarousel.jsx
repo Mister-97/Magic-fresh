@@ -14,6 +14,8 @@ function ImageCarousel() {
       onSelect={handleSelect}
       interval={4000}
       style={{ height: "100%" }}
+      controls={false}
+      indicators={false}
     >
       <Carousel.Item>
         <img
