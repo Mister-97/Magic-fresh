@@ -54,36 +54,28 @@ const BookNow = () => {
       <br />
       <Point>
         <h2>Request a Quote</h2>
-        <Flex>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="text" placeholder="Email" />
-        </Flex>
-        <Flex>
-          <input type="text" placeholder="Phone" />
-          <input type="text" placeholder="Zip Code" />
-        </Flex>
-        <Flex>
-          <Flex>
-            <Select options={optionsService} />
-            <Spacer></Spacer>
-            <Select options={optionsType} />
-            <Spacer></Spacer>
-            <Select options={optionsBedrooms} />
-            <Spacer></Spacer>
-          </Flex>
-        </Flex>
-        <br />
-        <textarea
-          name="Comments"
-          placeholder="Comments"
-          id=""
-          cols="30"
-          rows="10"
-        ></textarea>
-        <div>
-          <Btn>Submit</Btn>
-        </div>
+        <!-- Shform -->
+<div id="c292">
+   <a alt="Create contact form for free" href="https://i1page.com">Free contact form builder</a>
+</div>
+<script type="text/javascript">
+    (function(d, t) {
+        var s = d.createElement(t), options = {
+            'id': 'YjZUcw',
+            'container': 'c292',
+            'height': '755px',
+            'form': '//app.shform.com/app/embed'
+        };
+        s.type= 'text/javascript';
+        s.src = '//app.shform.com/static_files/js/form.widget.js';
+        s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { (new FormWidget()).initialize(options).display() } catch (e) { }
+        };
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+    })(document, 'script');
+</script>
+<!-- End Shform -->
       </Point>
       <br />
       <Img src="/booking/buildings.png" />
