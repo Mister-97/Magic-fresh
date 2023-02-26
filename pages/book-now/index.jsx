@@ -54,6 +54,7 @@ const BookNow = () => {
       <br />
       <Point>
         <h2>Request a Quote</h2>
+        <form action="https://app.shform.com/app/f?id=292" method="POST">
         <Flex>
           <input type="text" placeholder="First Name" />
           <input type="text" placeholder="Last Name" />
@@ -84,6 +85,7 @@ const BookNow = () => {
         <div>
           <Btn>Submit</Btn>
         </div>
+      </form>
       </Point>
       <br />
       <Img src="/booking/buildings.png" />
@@ -92,18 +94,6 @@ const BookNow = () => {
 };
 
 export default BookNow;
-
-function MyForm() {
-  return (
-    <form>
-      <label>Enter your name:
-        <input type="text" />
-      </label>
-    </form>
-  )
-}
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<MyForm />);
 
 const Container = styled.div`
   background: #eef6ff;
