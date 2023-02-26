@@ -56,31 +56,31 @@ const BookNow = () => {
         <h2>Request a Quote</h2>
         <form action="https://app.shform.com/app/f?id=292" method="POST">
         <Flex>
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="First Name" id="text_1" name="text_1" />
+          <input type="text" placeholder="Last Name" id="text_2" name="text_2" />
+          <input type="text" placeholder="Email" id="email_1" name="email_1"/>
         </Flex>
         <Flex>
-          <input type="text" placeholder="Phone" />
-          <input type="text" placeholder="Zip Code" />
+          <input type="text" placeholder="Phone" id="text_3" name="text_3"/>
+          <input type="text" placeholder="Zip Code" id="number_1" name="number_1"/>
         </Flex>
         <Flex>
           <Flex>
-            <Select options={optionsService} />
+            <Select options={optionsService} id="selectlist_1" name="selectlist_1[]"/>
             <Spacer></Spacer>
-            <Select options={optionsType} />
+            <Select options={optionsType} id="selectlist_2" name="selectlist_2[]"/>
             <Spacer></Spacer>
-            <Select options={optionsBedrooms} />
+            <Select options={optionsBedrooms} id="selectlist_3" name="selectlist_3[]"/>
             <Spacer></Spacer>
           </Flex>
         </Flex>
         <br />
         <textarea
-          name="Comments"
           placeholder="Comments"
-          id=""
           cols="30"
           rows="10"
+          id="textarea_1"
+          name="textarea_1"
         ></textarea>
         <div>
           <Btn>Submit</Btn>
