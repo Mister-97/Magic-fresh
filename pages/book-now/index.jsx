@@ -48,34 +48,21 @@ const BookNow = () => {
     { value: "3br/2ba", label: "3br/3ba" },
     { value: "4br+", label: "4br+" },
   ];
+  
+  class App extends React.Component {
+   render(){
+      return (
+test
+      );
+   }
+}
+export default App;
 
   return (
     <Container>
       <br />
       <Point>
         <h2>Request a Quote</h2>
-
-<div id="c292">
-   <a alt="Create contact form for free" href="https://i1page.com">Free contact form builder</a>
-</div>
-<script type="text/javascript">
-    (function(d, t) {
-        var s = d.createElement(t), options = {
-            'id': 'YjZUcw',
-            'container': 'c292',
-            'height': '530px',
-            'form': '//app.shform.com/app/embed'
-        };
-        s.type= 'text/javascript';
-        s.src = '//app.shform.com/static_files/js/form.widget.js';
-        s.onload = s.onreadystatechange = function() {
-            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-            try { (new FormWidget()).initialize(options).display() } catch (e) { }
-        };
-        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-    })(document, 'script');
-</script>
-
 
       </Point>
       <br />
