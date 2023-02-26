@@ -54,7 +54,36 @@ const BookNow = () => {
       <br />
       <Point>
         <h2>Request a Quote</h2>
-        <iframe name="cYjZUcwiYjZUcw" id="cYjZUcwiYjZUcw" src="//app.shform.com/app/embed?id=YjZUcw&amp;sid=0&amp;p=1&amp;t=1&amp;reset=1&amp;js=1&amp;rec=1&amp;parentUrl=https%3A%2F%2Fapp.shform.com%2Fapp%2Fform%3Fid%3DYjZUcw&amp;title=Request%20a%20Quote%20magicfresh.cleaning&amp;url=https%3A%2F%2Fapp.shform.com%2Fapp%2Fform%3Fid%3DYjZUcw&amp;referrer=https%3A%2F%2Fapp.shform.com%2Fform%2Fshare%3Fid%3D292" scrolling="no" frameborder="0" style="width: 100%; height: 570px;"></iframe>
+        <Flex>
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="text" placeholder="Email" />
+        </Flex>
+        <Flex>
+          <input type="text" placeholder="Phone" />
+          <input type="text" placeholder="Zip Code" />
+        </Flex>
+        <Flex>
+          <Flex>
+            <Select options={optionsService} />
+            <Spacer></Spacer>
+            <Select options={optionsType} />
+            <Spacer></Spacer>
+            <Select options={optionsBedrooms} />
+            <Spacer></Spacer>
+          </Flex>
+        </Flex>
+        <br />
+        <textarea
+          name="Comments"
+          placeholder="Comments"
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <div>
+          <Btn>Submit</Btn>
+        </div>
       </Point>
       <br />
       <Img src="/booking/buildings.png" />
