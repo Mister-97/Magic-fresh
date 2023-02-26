@@ -55,26 +55,7 @@ const BookNow = () => {
       <Point>
         <h2>Request a Quote</h2>
     <!-- Shform -->
-<div id="c292">
-   <a alt="Create contact form for free" href="https://i1page.com">Free contact form builder</a>
-</div>
-<script type="text/javascript">
-    (function(d, t) {
-        var s = d.createElement(t), options = {
-            'id': 'YjZUcw',
-            'container': 'c292',
-            'height': '530px',
-            'form': '//app.shform.com/app/embed'
-        };
-        s.type= 'text/javascript';
-        s.src = '//app.shform.com/static_files/js/form.widget.js';
-        s.onload = s.onreadystatechange = function() {
-            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-            try { (new FormWidget()).initialize(options).display() } catch (e) { }
-        };
-        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-    })(document, 'script');
-</script>
+<iframe name="cYjZUcwiYjZUcw" id="cYjZUcwiYjZUcw" src="//app.shform.com/app/embed?id=YjZUcw&amp;sid=0&amp;p=1&amp;t=1&amp;reset=1&amp;js=1&amp;rec=1&amp;parentUrl=https%3A%2F%2Fapp.shform.com%2Fapp%2Fform%3Fid%3DYjZUcw&amp;title=Request%20a%20Quote%20magicfresh.cleaning&amp;url=https%3A%2F%2Fapp.shform.com%2Fapp%2Fform%3Fid%3DYjZUcw&amp;referrer=https%3A%2F%2Fapp.shform.com%2Fform%2Fshare%3Fid%3D292" scrolling="no" frameborder="0" style="width: 100%; height: 570px;"></iframe>
 <!-- End Shform -->
 
       </Point>
