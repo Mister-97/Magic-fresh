@@ -93,14 +93,17 @@ const BookNow = () => {
 
 export default BookNow;
 
-var NewComponent = React.createClass({
-  render: function() {
-    return (
-
-      <iframe name="cYjZUcwiYjZUcw" id="cYjZUcwiYjZUcw" src="//app.shform.com/app/embed?id=YjZUcw&sid=0&p=1&t=1&reset=1&js=1&rec=1&parentUrl=https%3A%2F%2Fapp.shform.com%2Fapp%2Fform%3Fid%3DYjZUcw&title=Request%20a%20Quote%20magicfresh.cleaning&url=https%3A%2F%2Fapp.shform.com%2Fapp%2Fform%3Fid%3DYjZUcw&referrer=https%3A%2F%2Fapp.shform.com%2Fform%2Fshare%3Fid%3D292" scrolling="no" frameBorder={0} style={{width: '100%', height: '570px'}} />
-    );
-  }
-});
+function MyForm() {
+  return (
+    <form>
+      <label>Enter your name:
+        <input type="text" />
+      </label>
+    </form>
+  )
+}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<MyForm />);
 
 const Container = styled.div`
   background: #eef6ff;
