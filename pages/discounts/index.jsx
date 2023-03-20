@@ -7,19 +7,55 @@ const Discounts = () => {
   const router = useRouter();
   return (
     <div style={{ background: "#EEF6FF" }}>
-      <H2>Sign Up for out newsletter to stay updated with Discounts</H2>
       <Container>
-        <img src="/booking/mail.png" />
         <Flex>
-          <h3>Enter info below</h3>
-          <Input type="text" placeholder="Full Name" />
-          <Input type="text" placeholder="Email Address" />
+          <Heading>
+            <H2 style={{ color: "red" }}>$5</H2>
+            <H2> Full House Deep Cleaning Raffle</H2>
+          </Heading>
+          <p style={{ color: "#636363" }}>
+            Get a full house deep cleaning for $5 by entering into our seasonal
+            <br />
+            raffle. Multiple entries are eligible to increase chances of
+            winning!
+          </p>
+          <p style={{ color: "#636363" }}>Raffle ends April 25th 2022 </p>
+          <h6>Information</h6>
+          <Input type="text" placeholder="First and Last Name" />
+          <Input type="number" placeholder="Phone number" />
+          <Input type="email" placeholder="Email Address" />
+          <h6 style={{ marginTop: "30px" }}>Payment methods</h6>
+          <Input type="text" placeholder="First and Last Name" />
+          <Input type="number" placeholder="Card number" />
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <Input
+              style={{ width: "240px" }}
+              type="number"
+              placeholder="Security Code"
+            />
+            <Input
+              style={{ width: "240px" }}
+              type="number"
+              placeholder="Expiration date"
+            />
+          </div>
+          <Input type="text" placeholder="Billing Address" />
+          <div
+            style={{
+              display: "flex",
+              gap: "4px",
+              marginTop: "20px",
+              marginBottom: "20px",
+            }}
+          >
+            <input type="checkbox" id="checkbox" />
+            <label for="checkbox" style={{ text: "8px" }}>
+              By clicking box you agree to newsletter, discounts and raffle
+              email marketing
+            </label>
+          </div>
           <div>
             <Btn>Submit</Btn>
-          </div>
-          <br />
-          <div>
-            <Btn onClick={() => router.push("/book-now")}>Book Now</Btn>
           </div>
         </Flex>
       </Container>
@@ -28,7 +64,12 @@ const Discounts = () => {
 };
 
 export default Discounts;
-
+const Heading = styled.h2`
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 4px;
+`;
 const H2 = styled.h2`
   text-align: center;
 `;
@@ -48,14 +89,15 @@ const Container = styled.div`
 const Input = styled.input`
   padding: 10px;
   outline: none;
-  margin: 20px 20px 20px 0;
-  width: 200px;
+  margin: 10px 20px 10px 0;
+  width: 500px;
 `;
 
 const Flex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5rem;
   div {
     width: fit-content;
   }

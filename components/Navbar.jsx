@@ -20,7 +20,7 @@ const Navbar = () => {
         <Link href="/book-now">Book Now</Link>
         <Link href="/services">Our Services</Link>
         <Link href="/?about">About Us</Link>
-        <Link href="/discounts">Discounts</Link>
+        <Link href="/discounts">Raffles and Discounts</Link>
       </Flex>
       <Btns>
         <Request
@@ -47,7 +47,7 @@ const Navbar = () => {
           <Link href="/?about">About Us</Link>
         </div>
         <div>
-          <Link href="/discounts">Discounts</Link>
+          <Link href="/discounts">Raffles and Discounts</Link>
         </div>
       </MobileMenu>
     </Nav>
