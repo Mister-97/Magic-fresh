@@ -2,6 +2,8 @@ import { useRouter } from "next/router";
 import React from "react";
 import styled from "styled-components";
 import { Btn } from "../contact";
+import { PaymentForm } from "react-square-web-payments-sdk";
+import { CreditCard } from "react-square-web-payments-sdk";
 
 const Discounts = () => {
   const router = useRouter();
@@ -55,7 +57,32 @@ const Discounts = () => {
             </label>
           </div>
           <div>
-            <Btn>Submit</Btn>
+            <PaymentForm
+              applicationId="sandbox-sq0idb-hyrkjanVdy28KV-U6aP5og"
+              cardTokenizeResponseReceived={async (token, verifiedBuyer) => {
+                const response = await fetch("/api/pay", {
+                  method: "POST",
+                  headers: {
+                    "Content-type": "application/json",
+                  },
+                  body: JSON.stringify({
+                    sourceId: token.token,
+                  }),
+                });
+                console.log(await response.json());
+              }}
+              locationId="L264NTGKRKQV7"
+            >
+              <CreditCard
+                buttonProps={{
+                  css: {
+                    backgroundColor: "#78a5ce",
+                    fontSize: "18px",
+                    color: "#fff",
+                  },
+                }}
+              />
+            </PaymentForm>
           </div>
         </Flex>
       </Container>
