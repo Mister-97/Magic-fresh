@@ -26,22 +26,6 @@ const Discounts = () => {
           <Input type="text" placeholder="First and Last Name" />
           <Input type="number" placeholder="Phone number" />
           <Input type="email" placeholder="Email Address" />
-          <h6 style={{ marginTop: "30px" }}>Payment methods</h6>
-          <Input type="text" placeholder="First and Last Name" />
-          <Input type="number" placeholder="Card number" />
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <Input
-              style={{ width: "240px" }}
-              type="number"
-              placeholder="Security Code"
-            />
-            <Input
-              style={{ width: "240px" }}
-              type="number"
-              placeholder="Expiration date"
-            />
-          </div>
-          <Input type="text" placeholder="Billing Address" />
           <div
             style={{
               display: "flex",
@@ -56,6 +40,23 @@ const Discounts = () => {
               email marketing
             </label>
           </div>
+          <h6 style={{ marginTop: "30px" }}>Payment methods</h6>
+          {/* <Input type="text" placeholder="First and Last Name" />
+          <Input type="number" placeholder="Card number" />
+          <div style={{ display: "flex", flexDirection: "row" }}>
+            <Input
+              style={{ width: "240px" }}
+              type="number"
+              placeholder="Security Code"
+            />
+            <Input
+              style={{ width: "240px" }}
+              type="number"
+              placeholder="Expiration date"
+            />
+          </div>
+          <Input type="text" placeholder="Billing Address" /> */}
+
           <div>
             <PaymentForm
               applicationId="sandbox-sq0idb-hyrkjanVdy28KV-U6aP5og"
