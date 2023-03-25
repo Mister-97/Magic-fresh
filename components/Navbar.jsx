@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link href="/">Home</Link>
         <Link href="/book-now">Book Now</Link>
         <Link href="/services">Our Services</Link>
-        <Link href="/?about">About Us</Link>
+        {/* <Link href="/?about">About Us</Link> */}
         <Link href="/discounts">Raffles and Discounts</Link>
       </Flex>
       <Btns>
@@ -43,9 +43,9 @@ const Navbar = () => {
         <div>
           <Link href="/services">Our Services</Link>
         </div>
-        <div>
+        {/* <div>
           <Link href="/?about">About Us</Link>
-        </div>
+        </div> */}
         <div>
           <Link href="/discounts">Raffles and Discounts</Link>
         </div>
