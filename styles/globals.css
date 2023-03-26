@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Oswald:wght@300;400&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.magic-fresh-terms-of {
+  color: #000;
+  font-family: Questrial;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 100px;
+}
+
+@import url("./Home.module.css");
+@import url("./client.css");
+@import "bootstrap/dist/css/bootstrap.min.css";

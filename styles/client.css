@@ -1,0 +1,115 @@
+.client-container {
+    margin: 0 auto;
+    background-color: white;
+    padding: 50px 0;
+    width: 500px;
+}
+
+.client-container__topic {
+    font-family: 'Abhaya Libre SemiBold';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.client-container__slider {
+    position: relative;
+}
+
+.carousel {
+    height: 200px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    text-align: center;
+}
+.client-container__slider-label {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    width: 300px;
+    color: black;
+}
+
+.carousel-control-next{
+    top: calc(100% - 32px) !important;
+    width: 32px !important;
+    right: calc(50% - 40px) !important;
+    color: black !important;
+    text-decoration: none !important;
+} 
+.carousel-control-prev {
+    top: calc(100% - 32px) !important;    
+    width: 32px !important;
+    left: calc(50% - 40px) !important;
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.carousel-indicator {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: -32px;
+    font-size: 20px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+}
+
+.carousel-border {
+    border: 1px solid #7C7C7C;
+    position: absolute;
+    width: 34px;
+    margin-top: -33px;
+    text-align: center;
+    left: calc(50% - 17px);
+}
+
+.carousel-control-next-icon {
+    width: 20px !important;
+}
+
+.carousel-control-next-icon::after {
+    content: ">";
+    color: black;
+}
+
+.carousel-control-prev-icon {
+    width: 20px !important;
+}
+
+.carousel-control-prev-icon::after {
+    content: "<";
+    color: black;
+}
+
+@media (min-width: 0px) and (max-width: 400px) {
+    .clients {
+        padding: 20px;
+    }
+    .client-container {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .clients {
+        padding: 60px;
+    }
+    .client-container {
+        width: 100%;
+    }
+}
