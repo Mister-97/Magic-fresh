@@ -8,11 +8,11 @@ const Discounts = () => {
     <div style={{ background: "#EEF6FF" }}>
       <Container>
         <Flex>
-          <Heading>
-            <H2 style={{ color: "red" }}>$5</H2>
-            <H2> Full House Deep Cleaning Raffle</H2>
-          </Heading>
-          <p style={{ color: "#636363" }}>
+          <FlexCenter>
+            {/* <h2 style={{ color: "red" }}>$5</h2> */}
+            <H2>FREE Spring Cleaning Raffle</H2>
+          </FlexCenter>
+          <p style={{ color: "#636363", textAlign: "center" }}>
             Get a full house deep cleaning for $5 by entering into our seasonal
             <br />
             raffle. Multiple entries are eligible to increase chances of
@@ -30,14 +30,13 @@ const Discounts = () => {
 };
 
 export default Discounts;
-const Heading = styled.h2`
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  gap: 4px;
-`;
+
 const H2 = styled.h2`
   text-align: center;
+  color: black;
+  ::first-word {
+    color: red; /* set the color of the first letter to red */
+  }
 `;
 
 const Container = styled.div`
@@ -67,4 +66,9 @@ const Flex = styled.div`
   div {
     width: fit-content;
   }
+`;
+
+const FlexCenter = styled.div`
+  display: flex;
+  justify-content: space-around;
 `;

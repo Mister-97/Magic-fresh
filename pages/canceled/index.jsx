@@ -6,6 +6,7 @@ const Canceled = () => {
     <Container>
       <h1>OOPS! 🚫</h1>
       <h3>We were unable to process your transaction. Please try again</h3>
+      <a href="/discounts">Try Again</a>
     </Container>
   );
 };

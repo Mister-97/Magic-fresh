@@ -58,7 +58,7 @@ const Regular = () => {
           wipe down baseboard/doors, cabinets inside, windows
         </ul>
         <Img>
-          <img src="/services/1-1.png" alt="" />
+          <img src="/services/kitchen.png" alt="" />
           <br />
           <a href="">Book Service</a>
         </Img>

@@ -15,6 +15,10 @@ body {
   line-height: 100px;
 }
 
+#form-app .form-control {
+  text-align: center;
+}
+
 @import url("./Home.module.css");
 @import url("./client.css");
 @import "bootstrap/dist/css/bootstrap.min.css";
