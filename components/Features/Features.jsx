@@ -26,11 +26,11 @@ const Features = () => {
               <img className="kissing" src="/homepage/kissing.png" />
             </h3>
             <p>
-              Magic Fresh is a cleaning service that serves the Chicagoland
-              area. Our main goal is customer satisfaction, which means that our
-              clients' satisfaction is our top priority. Because each of our
-              Cleaners possesses a magical touch, each cleaning will have your
-              home feeling brand new again.
+              Magic Fresh Cleaning is a cleaning service that serves the
+              Chicagoland area. Our main goal is customer satisfaction, which
+              means that our clients' satisfaction is our top priority. Because
+              each of our Cleaners possesses a magical touch, each cleaning will
+              have your home feeling brand new again.
             </p>
             <a style={{}} href="/book-now">
               Try Us Out
