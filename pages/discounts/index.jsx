@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ContactForm from "../../components/Discounts/Form";
 import StripeCheckout from "../../components/Discounts/StripeCheckout";
 
 const Discounts = () => {
@@ -19,23 +20,8 @@ const Discounts = () => {
           </p>
           <p style={{ color: "#636363" }}>Raffle ends April 25th 2022 </p>
           <h6>Information</h6>
-          <Input type="text" placeholder="First and Last Name" />
-          <Input type="number" placeholder="Phone number" />
-          <Input type="email" placeholder="Email Address" />
-          <div
-            style={{
-              display: "flex",
-              gap: "4px",
-              marginTop: "20px",
-              marginBottom: "20px",
-            }}
-          >
-            <input type="checkbox" id="checkbox" />
-            <label htmlFor="checkbox" style={{ text: "8px" }}>
-              By clicking box you agree to newsletter, discounts and raffle
-              email marketing
-            </label>
-          </div>
+
+          <ContactForm />
           <StripeCheckout price={5} />
         </Flex>
       </Container>

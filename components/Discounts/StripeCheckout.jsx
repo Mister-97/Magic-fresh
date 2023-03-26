@@ -27,7 +27,7 @@ const StripeCheckout = ({ price }) => {
   return (
     <>
       <StyledButton onClick={handleSubmit} disabled={loading}>
-        {loading ? "Loading..." : `Buy for $${price}`}
+        {loading ? "Loading..." : `Purchase Raffle Ticket!`}
       </StyledButton>
     </>
   );
