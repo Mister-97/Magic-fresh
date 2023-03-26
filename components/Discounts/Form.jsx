@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import styled from "styled-components";
 
 const ContactForm = () => {
   useEffect(() => {
@@ -28,12 +29,19 @@ const ContactForm = () => {
   }, []);
 
   return (
-    <div id="c315">
+    <Container id="c315">
       <a alt="Create contact form for free" href="https://i1page.com">
         Contact Form
       </a>
-    </div>
+    </Container>
   );
 };
 
 export default ContactForm;
+
+const Container = styled.div`
+  width: 50vw !important;
+  @media (max-width: 768px) {
+    width: 80vw !important;
+  }
+`;

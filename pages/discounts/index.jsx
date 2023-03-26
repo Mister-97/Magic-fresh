@@ -22,7 +22,7 @@ const Discounts = () => {
           <h6>Information</h6>
 
           <ContactForm />
-          <StripeCheckout price={5} />
+          {/* <StripeCheckout price={5} /> */}
         </Flex>
       </Container>
     </div>
