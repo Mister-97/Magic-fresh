@@ -1,12 +1,8 @@
-import { useRouter } from "next/router";
 import React from "react";
 import styled from "styled-components";
-import { Btn } from "../contact";
-import { PaymentForm } from "react-square-web-payments-sdk";
-import { CreditCard } from "react-square-web-payments-sdk";
+import StripeCheckout from "../../components/Discounts/StripeCheckout";
 
 const Discounts = () => {
-  const router = useRouter();
   return (
     <div style={{ background: "#EEF6FF" }}>
       <Container>
@@ -35,56 +31,12 @@ const Discounts = () => {
             }}
           >
             <input type="checkbox" id="checkbox" />
-            <label for="checkbox" style={{ text: "8px" }}>
+            <label htmlFor="checkbox" style={{ text: "8px" }}>
               By clicking box you agree to newsletter, discounts and raffle
               email marketing
             </label>
           </div>
-          <h6 style={{ marginTop: "30px" }}>Payment methods</h6>
-          {/* <Input type="text" placeholder="First and Last Name" />
-          <Input type="number" placeholder="Card number" />
-          <div style={{ display: "flex", flexDirection: "row" }}>
-            <Input
-              style={{ width: "240px" }}
-              type="number"
-              placeholder="Security Code"
-            />
-            <Input
-              style={{ width: "240px" }}
-              type="number"
-              placeholder="Expiration date"
-            />
-          </div>
-          <Input type="text" placeholder="Billing Address" /> */}
-
-          <div>
-            <PaymentForm
-              applicationId="sandbox-sq0idb-hyrkjanVdy28KV-U6aP5og"
-              cardTokenizeResponseReceived={async (token, verifiedBuyer) => {
-                const response = await fetch("/api/pay", {
-                  method: "POST",
-                  headers: {
-                    "Content-type": "application/json",
-                  },
-                  body: JSON.stringify({
-                    sourceId: token.token,
-                  }),
-                });
-                console.log(await response.json());
-              }}
-              locationId="L264NTGKRKQV7"
-            >
-              <CreditCard
-                buttonProps={{
-                  css: {
-                    backgroundColor: "#78a5ce",
-                    fontSize: "18px",
-                    color: "#fff",
-                  },
-                }}
-              />
-            </PaymentForm>
-          </div>
+          <StripeCheckout price={5} />
         </Flex>
       </Container>
     </div>
