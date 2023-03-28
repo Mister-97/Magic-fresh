@@ -24,7 +24,7 @@ export default function Home() {
         <meta property="og:image" content="https://ibb.co/6r5MgkX" />
         <meta property="og:url" content="https://www.magicfresh.cleaning/" />
         <meta property="og:type" content="website" />
-        <title>Magic Fresh</title>
+        <title>Magic Fresh Cleaning</title>
         <meta name="description" content="Cleaning Service" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
