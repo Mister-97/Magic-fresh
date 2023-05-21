@@ -10,9 +10,18 @@ import Navbar from "../components/Navbar";
 import styles from "../styles/Home.module.css";
 import Clients from "../components/Clients";
 import ImageCarousel from "../components/ImageCarousel";
+import ReactGA from "react-ga";
+import { useEffect } from "react";
+
+ReactGA.initialize("G-P3B6YX70SC");
 
 export default function Home() {
   const router = useRouter();
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <div className={styles.container} style={{ width: "100%" }}>
       <Head>
