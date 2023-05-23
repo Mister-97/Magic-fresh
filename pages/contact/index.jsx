@@ -7,6 +7,15 @@ const Contact = () => {
     <div>
       <Point>
         <h2>Contact Us</h2>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3B6YX70SC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P3B6YX70SC');
+</script>
         <p>
           We’ll contact you by phone first to address your concerns. If the
           first point of contact doesn’t go though, expect an email from the
