@@ -37,15 +37,6 @@ export default function Home() {
         <meta name="description" content="Cleaning Service" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3B6YX70SC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P3B6YX70SC');
-</script>
       {/* <Navbar /> */}
       <Banner>
         {/* <img src="/homepage/banner-1.png" /> */}
