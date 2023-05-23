@@ -95,15 +95,6 @@ const BookNow = () => {
 
 export default BookNow;
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P3B6YX70SC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P3B6YX70SC');
-</script>
-
 const Container = styled.div`
   background: #eef6ff;
 `;
