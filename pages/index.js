@@ -46,8 +46,8 @@ export default function Home() {
 
   return (
     <div className={styles.container} style={{ width: "100%" }}>
-      <GoogleAnalytics />
       <Head>
+        <GoogleAnalytics />
         <meta property="og:title" content="Magic Fresh Cleaning" />
         <meta
           property="og:description"
