@@ -12,8 +12,30 @@ import Clients from "../components/Clients";
 import ImageCarousel from "../components/ImageCarousel";
 import ReactGA from "react-ga";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 ReactGA.initialize("G-P3B6YX70SC");
+
+const GoogleAnalytics = () => {
+  useEffect(() => {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-P3B6YX70SC");
+  }, []);
+
+  return (
+    <Helmet>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-P3B6YX70SC"
+      ></script>
+    </Helmet>
+  );
+};
 
 export default function Home() {
   const router = useRouter();
@@ -24,6 +46,7 @@ export default function Home() {
 
   return (
     <div className={styles.container} style={{ width: "100%" }}>
+      <GoogleAnalytics />
       <Head>
         <meta property="og:title" content="Magic Fresh Cleaning" />
         <meta
