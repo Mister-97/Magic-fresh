@@ -18,7 +18,7 @@ const Discounts = () => {
             raffle. Multiple entries are eligible to increase chances of
             winning!
           </p>
-          <p style={{ color: "#636363" }}>Raffle ends May 5th 2023 </p>
+          <p style={{ color: "#636363" }}>Raffle ends November 2nd 2023 </p>
           <h6>Information</h6>
 
           <ContactForm />
